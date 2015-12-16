@@ -1,0 +1,107 @@
+/* Start: Header
+ --------------- */
+
+header {
+    background             : url(../img/header-2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size   : cover;
+    -o-background-size     : cover;
+    background-size        : cover;
+
+    padding: -40%;
+}
+
+#sub-heading, #sub-heading:hover {
+    margin-bottom: 2%;
+    color: white;
+}
+
+a {
+    color: #fff;
+}
+
+p {
+    font-style: italic;
+    text-align: center;
+}
+
+h1 {
+    font-size : 65px;
+    text-align: center;
+}
+
+#header {
+    margin-top: -10%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size     : 2em;
+    padding-bottom: 10%;
+}
+
+/* Start: Contact Information
+ ---------------------------- */
+
+.fa-twitter, .fa-facebook, .fa-google-plus,.fa-envelope {
+    margin: auto auto auto auto;
+}
+
+.fa-twitter:hover, .fa-facebook:hover, .fa-google-plus:hover, .fa-envelope:hover, h2:hover{
+    color: inherit;
+}
+
+.social-heading {
+    color: white;
+}
+
+#twitter, #facebook, #google-plus, #mail, #github, #linkedin {
+    color: white;
+}
+
+#github-text, #linkedin-text {
+    margin-top: -16%;
+}
+
+#twitter:hover {
+    color: #4099FF;
+}
+
+#facebook:hover {
+    color: #3A5795;
+}
+
+#google-plus:hover {
+    color: #DB4437;
+}
+
+#mail:hover {
+    color: #DA4336;
+}
+
+#github:hover {
+    color: gainsboro;
+}
+
+#linkedin:hover {
+    color: #0077B5;
+}
+
+/* End: Contact Information */
+
+
+/* End: Header  */
+
+
+/* Start: Footer
+   ------------- */
+
+.footer {
+    margin-top: 0;
+}
+
+/* End: Footer */

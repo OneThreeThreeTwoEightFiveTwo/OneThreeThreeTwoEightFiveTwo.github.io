@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+}
+
+label {
+    margin-top: 1%;
+}
+
+.container {
+    position: relative;
+    min-height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg-warning {
+    background-color: rosybrown;
+    color: white;
+}
+
+.vertical-middle {
+    display       : table-cell;
+    vertical-align: middle;
+}
+
+.panel.panel-default {
+    margin-top: 20%;
+    margin-left: 40%;
+    margin-right: -80%;
+}
+
+@media (min-width:768px) {
+
+    .panel.panel-default {
+        max-width: 500px;
+        width    : 100%;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+}
+
+.message {
+    padding: 15px;
+    margin : 0;
+}
+
+.form-control {
+    margin-bottom: 2%;
+}
+
+.btn {
+    margin-top : 3%;
+    margin-left: 25%;
+}
+
+.warnings {
+    margin-top: 60%;
+    text-align: center;
+}
+
+#error {
+    margin-top: -50%;
+}
+
+@media (min-width:768px) {
+    #error {
+        margin-top: auto;
+    }
+}
+
+#page-footer {
+    margin-top: 5%;
+}

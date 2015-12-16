@@ -1,0 +1,68 @@
+<title> {{ title }} </title>
+
+<!--
+    An AngularJS Number Guessing Game
+    ---------------------------------
+    Allows the user to guess a number between 1 and 100.
+    The program will tell the user if the are close.
+-->
+
+<section id="guessing-game">
+    <div class="pull-down-div hidden-xs"></div>
+
+    <!-- Title -->
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Guess The Number</h2>
+        </div>
+        <div class="col-md-6">
+            <button ng-click="startGame()" class="btn btn-warning btn-sm pull-right pull-down"> Restart </button>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Guess Range -->
+    <p class="well lead">
+        Guess a number between: 1 and 100. <br> You have a limit of 10 guesses.
+    </p>
+
+    <!-- Guess -->
+    <div class="input-group">
+        <input type="number" ng-model="guess" class="form-control" placeholder="Guess: ">
+        <span class="input-group-btn">
+            <button class="btn btn-primary" ng-click="verifyGuess()" type="button"> Guess </button>
+        </span>
+    </div>
+    <!-- /.input-group -->
+
+    <!-- Number of Tries -->
+    <div>
+        <p class="text-info"> Number of Guesses: {{ numberOfGuesses }} </p>
+    </div>
+
+    <!-- Hints -->
+    <div class="hints">
+        <!-- Ran out of Guesses -->
+        <p ng-show="numberOfGuesses === 10" class="alert alert-danger"> You've Ran out of Guesses. The Number Was: {{answer}} </p>
+        <!-- Correct Answer -->
+        <p ng-show="guessDifference === 0" class="alert alert-success"> You Guessed Correctly! </p>
+        <!-- Too High -->
+        <p ng-show="guessDifference < 0" class="alert alert-warning"> Your Guess Is Too High </p>
+        <!-- Too Low -->
+        <p ng-show="guessDifference > 0" class="alert alert-warning"> Your Guess Is Too Low </p>
+
+    </div>
+    <!-- /.hints -->
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="col-md-6">
+        <h4>jh 2015.</h4>
+    </div>
+
+    <div class="col-md-6">
+        <a href="#" target="_self" id="top"><i class="fa fa-chevron-up fa-lg"> Back To Top</i></a>
+    </div>
+</footer>

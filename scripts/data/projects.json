@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "image": "img/portfolio/1.jpg",
+      "name" : "Number Guessing Game",
+      "description": "This is a number guessing game created build in AngularJS",
+      "link" : "#/portfolio/guessing-game"
+    },
+
+    {
+      "image": "img/portfolio/2.jpg",
+      "name" : "Note App",
+      "description": "This is a note app build in AngularJS",
+      "link" : "#/portfolio/note"
+    },
+
+    {
+      "image": "img/portfolio/3.jpg",
+      "name" : "Placeholder",
+      "description": "This is a placeholder",
+      "link" : "#/portfolio"
+    },
+
+    {
+      "image": "img/portfolio/3.jpg",
+      "name" : "Placeholder",
+      "description": "This is a placeholder",
+      "link" : "#/portfolio"
+    }
+  ]
+}

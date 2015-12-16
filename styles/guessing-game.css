@@ -1,0 +1,27 @@
+#guessing-game {
+    padding: 20%;
+    margin-top: 0;
+}
+
+@media (min-width:768px) {
+    #guessing-game {
+        margin-top: -20%;
+    }
+}
+
+.alert {
+    text-align: center;
+}
+
+.pull-down {
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.pull-down-div {
+    margin-top: 175px;
+}
+
+.well {
+    text-align: center;
+}

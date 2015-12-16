@@ -1,0 +1,130 @@
+/* Start: Header
+ --------------- */
+
+h1 {
+    padding-top: 6%;
+    text-align : center;
+    font-weight: bold;
+    font-size  : 65px;
+}
+
+.title {
+    color: #080808;
+}
+
+.title:hover {
+    color: black;
+}
+
+/* End: Header */
+
+
+/* Start: Content
+ ---------------- */
+
+a, a:hover {
+    text-decoration:none;
+    color          : #000;
+}
+
+/* Start: Blog Posts
+ ------------------- */
+
+.post-title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+html {
+    font-size: 18px;
+}
+
+ul.post-grid {
+    margin         : 0;
+    padding        : 1%;
+    padding-left   : 10%;
+    padding-right  : 10%;
+    list-style-type: none;
+}
+
+ul.post-grid li {
+    padding           : 20px;
+    cursor            : pointer;
+    -webkit-transition: background linear 0.5s;
+    transition        : background linear 0.5s;
+    border-bottom     : 1px solid #f7f7f7;
+}
+
+ul.post-grid li:hover {
+    background: #f7f7f7;
+    color     : black;
+}
+
+ul.post-grid li:hover h3 {
+    color: black;
+}
+
+h2,
+h3 {
+    color     : black;
+    font-weight: bold;
+}
+
+ul {
+    text-align: center;
+}
+
+cite {
+    margin-bottom: 1%;
+}
+
+.post {
+    -webkit-transition: 1s linear all;
+    transition        : 1s linear all;
+    opacity           : 1;
+    padding-top       : 0;
+    padding-left      : 10%;
+    padding-right     : 10%;
+    text-align        : center;
+}
+
+.post cite {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.post.ng-hide {
+    opacity: 0;
+}
+
+.post.ng-hide-add,
+.post.ng-hide-remove {
+    display: block!important;
+}
+
+.next, .prev,
+.next:hover, .prev:hover {
+    color: #080808;
+}
+
+.next {
+    padding-right: -30%;
+}
+
+.prev {
+    padding-left: 30%;
+}
+
+/* End: Blog Posts  */
+
+
+/* End: Content */
+
+#blog-footer {
+    margin-top: 2%;
+}

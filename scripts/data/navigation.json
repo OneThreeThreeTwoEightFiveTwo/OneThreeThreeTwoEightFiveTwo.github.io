@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "id"   : "home",
+      "title": "Home",
+      "link" : "home"
+    },
+
+    {
+      "id"   : "blog",
+      "title": "Blog",
+      "link" : "blog"
+    },
+
+    {
+      "id"   : "portfolio",
+      "title": "Portfolio",
+      "link" : "portfolio"
+    },
+
+    {
+      "id"   : "contact",
+      "title": "Contact",
+      "link" : "contact"
+    }
+  ]
+}

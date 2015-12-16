@@ -1,0 +1,85 @@
+<title> {{ title }} </title>
+
+<!--
+    Blog
+    ----
+    Displays the title and the part of the first paragraph in the main view.
+    When the user clicks/touches on a blog post.
+    The blog post will be displayed in the current view.
+-->
+
+<section id="blog-page">
+
+    <h1><a href="#/blog" class="title" ng-click="blog.selectTab( 'blog' )">Blog</a></h1>
+
+    <!-- Content -->
+    <section>
+        <div class="content">
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- Displays Blog Posts with limited data  -->
+                    <div class="col-md-12">
+
+                        <!-- Displays all Blog Posts -->
+                        <ul class="post-grid" ng-show="blog.isSelected( 'blog' )">
+
+                            <!-- Repeats all Posts -->
+                            <li ng-repeat="post in blog.posts" class="col-s-4" ng-click="blog.selectTab( $index )" >
+
+                                <!-- Post Title -->
+                                <h3 class="post-title"> {{ post.title }} </h3>
+
+                                <!-- Post Author and Post Creation Date -->
+                                <h5> by <span class="author"> {{ post.author }} </span> on {{ post.createdOn | date }} </h5>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ./col-md-12 -->
+
+                    <!-- Displays users requested Full Blog Post -->
+                    <div class="post" ng-repeat="post in blog.posts" ng-show="blog.isSelected( $index )">
+                        <!-- Post Title -->
+                        <h2 class="post-title"> {{ post.title }} </h2>
+
+                        <!-- Post Author and Post Creation Date -->
+                        <cite>by {{ post.author }} on {{ post.createdOn | date }} </cite>
+
+                        <!-- Post Body -->
+                        <div class="post-body">
+                            <p ng-repeat="paragraph in post.body">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+                        <!-- ./post-body -->
+
+                        <!-- Post Navigation -->
+                        <div class="post-navigation">
+                            <a class="next" ng-click="blog.selectTab( $index - 1 )"><i class="fa fa-arrow-left fa-2x"></i></a>
+                            <a class="prev" ng-click="blog.selectTab( $index + 1 )"><i class="fa fa-arrow-right fa-2x"></i></a>
+                        </div>
+                        <!-- ./post-navigation-->
+                    </div>
+                    <!-- ./post -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /. container -->
+        </div>
+        <!-- /. content -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="blog-footer">
+        <div class="col-md-6">
+            <h4>jh 2015.</h4>
+        </div>
+
+        <div class="col-md-6">
+            <a href="#" target="_self" id="top"><i class="fa fa-chevron-up fa-lg"> Back To Top</i></a>
+        </div>
+    </footer>
+
+</section>
