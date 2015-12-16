@@ -1,5 +1,6 @@
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
+
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -13,30 +14,47 @@
                 <a class="navbar-brand page-scroll" href="#/">JH</a>
             </div>
         </div>
+        <!-- ./navbar-header -->
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1" ng-controller="HeaderCtrl">
             <ul class="nav navbar-nav navbar-center">
+
+                <!-- About -->
                 <li ng-class="{ active: isActive('/')}">
                     <a class="page-scroll" href="#/">About</a>
                 </li>
+                <!-- ./about -->
+
+                <!-- Blog -->
                 <li ng-class="{ active: isActive('/blog')}">
                     <a class="page-scroll" href="#blog">Blog</a>
                 </li>
+                <!-- ./blog -->
+
+                <!-- Portfolio -->
                 <li ng-class="{ active: isActive('/portfolio')}">
                     <a class="page-scroll" href="#portfolio">Portfolio</a>
                 </li>
+                <!-- ./portfolio -->
+
+                <!-- Contact -->
                 <li ng-class="{ active: isActive('/contact')}">
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+                <!-- ./contact -->
             </ul>
+            <!-- ./nav -->
         </div>
-        <!-- /.navbar-collapse -->
+        <!-- ./navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
+    <!-- ./container-fluid -->
 </nav>
+
+<!-- Hides the Navbar menu once user has clicked a navbar link in mobile mode. -->
 <script>
-$('#navbar-collapse-1').click('li', function() {
-$('#navbar-collapse-1').collapse('hide');
-});
+    $('#navbar-collapse-1').click('li', function() {
+
+        $('#navbar-collapse-1').collapse('hide');
+    });
 </script>

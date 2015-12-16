@@ -14,7 +14,7 @@
                 <div class="panel-heading">
                     <h2 class="panel-title">Contact Form</h2>
                 </div>
-                <!-- /.panel-heading -->
+                <!-- ./panel-heading -->
 
                 <div ng-controller="ContactCtrl" class="panel-body">
 
@@ -27,7 +27,7 @@
                                 <input type="text" class="form-control" name="name" id="inputName" ng-model="formData.name" placeholder="Name" required />
                             </div>
                         </div>
-                        <!-- /.name -->
+                        <!-- ./name -->
 
                         <!-- E-Mail -->
                         <div class="form-group" ng-class="{ 'form-error': contactForm.email.$dirty && contactForm.email.$invalid, 'form-group':true }">
@@ -36,7 +36,7 @@
                                 <input type="email" class="form-control" name="email" id="inputEmail" ng-model="formData.email" placeholder="Email Address" required />
                             </div>
                         </div>
-                        <!-- /.e-mail -->
+                        <!-- ./e-mail -->
 
                         <!-- Subject -->
                         <div class="form-group" ng-class="{ 'form-error': contactForm.subject.$dirty && contactForm.subject.$invalid, 'form-group':true }">
@@ -45,7 +45,7 @@
                                 <input type="text" class="form-control" name="subject" id="inputSubject" ng-model="formData.subject" placeholder="Subject" required />
                             </div>
                         </div>
-                        <!-- /.subject -->
+                        <!-- ./subject -->
 
                         <!-- Message -->
                         <div class="form-group" ng-class="{ 'form-error': contactForm.message.$dirty && contactForm.message.$invalid, 'form-group':true }">
@@ -54,7 +54,7 @@
                                 <textarea ng-model="formData.message" class="form-control" id="inputMessage" name="message" placeholder="Your message..." required></textarea>
                             </div>
                         </div>
-                        <!-- /.message -->
+                        <!-- ./message -->
 
                         <!-- Submit -->
                         <div class="form-group" id="submit">
@@ -62,9 +62,9 @@
                                 <input type="submit" class="btn" ng-click="processForm()" ng-disabled="contactForm.$invalid" value="Send Message" />
                             </div>
                         </div>
-                        <!-- /.submit -->
+                        <!-- ./submit -->
                     </form>
-                    <!-- /.form-horizontal-->
+                    <!-- ./form-horizontal-->
 
                     <!-- Warnings -->
                     <div class="warnings">
@@ -80,15 +80,15 @@
                             <p class="bg-warning">Enter Your Message</p>
                         </div>
                     </div>
-                    <!-- /.warning -->
+                    <!-- ./warning -->
                 </div>
-                <!-- /.panel-body -->
+                <!-- ./panel-body -->
             </div>
-            <!-- /.panel-default -->
+            <!-- ./panel-default -->
         </div>
-        <!-- /.container -->
+        <!-- ./container -->
     </div>
-    <!-- /.vertical-middle -->
+    <!-- ./vertical-middle -->
 </section>
 
 <!-- Footer -->
@@ -101,3 +101,4 @@
         <a href="#" target="_self" id="top"><i class="fa fa-chevron-up fa-lg"> Back To Top</i></a>
     </div>
 </footer>
+<!-- ./footer -->

@@ -1,4 +1,4 @@
-'use strict'; /* Modified code from: http://codepen.io/nickmoreton/pen/mgtLK */
+'use strict';
 
 angular
     .module (
@@ -21,8 +21,6 @@ angular
 
                 // Stores the JSON data into the object 'posts'.
                 blog.posts = data;
-
-                console.log(blog.posts);
             }
         );
 

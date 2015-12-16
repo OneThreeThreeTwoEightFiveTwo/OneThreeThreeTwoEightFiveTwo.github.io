@@ -19,7 +19,7 @@
             <button ng-click="startGame()" class="btn btn-warning btn-sm pull-right pull-down"> Restart </button>
         </div>
     </div>
-    <!-- /.row -->
+    <!-- ./row -->
 
     <!-- Guess Range -->
     <p class="well lead">
@@ -33,7 +33,7 @@
             <button class="btn btn-primary" ng-click="verifyGuess()" type="button"> Guess </button>
         </span>
     </div>
-    <!-- /.input-group -->
+    <!-- ./input-group -->
 
     <!-- Number of Tries -->
     <div>
@@ -44,15 +44,18 @@
     <div class="hints">
         <!-- Ran out of Guesses -->
         <p ng-show="numberOfGuesses === 10" class="alert alert-danger"> You've Ran out of Guesses. The Number Was: {{answer}} </p>
+
         <!-- Correct Answer -->
         <p ng-show="guessDifference === 0" class="alert alert-success"> You Guessed Correctly! </p>
+
         <!-- Too High -->
         <p ng-show="guessDifference < 0" class="alert alert-warning"> Your Guess Is Too High </p>
+
         <!-- Too Low -->
         <p ng-show="guessDifference > 0" class="alert alert-warning"> Your Guess Is Too Low </p>
 
     </div>
-    <!-- /.hints -->
+    <!-- ./hints -->
 
 </section>
 
@@ -66,3 +69,4 @@
         <a href="#" target="_self" id="top"><i class="fa fa-chevron-up fa-lg"> Back To Top</i></a>
     </div>
 </footer>
+<!-- ./footer -->

@@ -13,32 +13,51 @@
                 <a href="#/portfolio" id="button">Download My Resume</a><br>
             </div>
         </div>
-        <!-- /.header-content -->
+        <!-- ./header-content -->
     </header>
+    <!-- ./header -->
 
     <!-- Content -->
     <section class="no-padding" id="content-portfolio" class="portfolio">
         <div class="container-fluid">
             <div class="row"><hr>
+
+                <!-- Title -->
                 <h2 id="title">Here's what I have created</h2>
+                <!-- ./title -->
+
+                <!-- Project -->
                 <div class="col-lg-4 col-sm-6" id="image">
+
                     <ul class="projects-grind">
+
                         <li ng-repeat="project in projects" class="col-lg-4 col-sm-6">
 
+                            <!-- Project Name -->
                             <h1 id="name">{{ project.name }}</h1>
+                            <!-- ./project-name -->
 
+                            <!-- Project Link -->
                             <a href="{{ project.link }}">
                                 <img ng-src="{{ project.image }}" class="img-responsive">
                             </a>
+                            <!-- ./project-link -->
 
+                            <!-- Project Description -->
                             <p id="description">{{ project.description }}</p>
+                            <!-- ./project-description -->
 
                         </li>
                     </ul>
+                    <!-- ./project-grind -->
                 </div>
+                <!-- ./project -->
             </div>
+            <!-- ./row -->
         </div>
+        <!-- ./container-fluid -->
     </section>
+    <!-- ./content -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -50,4 +69,5 @@
             <a href="#" target="_self" id="top"><i class="fa fa-chevron-up fa-lg"> Back To Top</i></a>
         </div>
     </footer>
+    <!-- ./footer -->
 </section>

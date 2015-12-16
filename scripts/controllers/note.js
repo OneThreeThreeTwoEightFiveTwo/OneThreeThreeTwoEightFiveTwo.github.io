@@ -63,7 +63,7 @@ angular
         // Function to update the note.
         $scope.updateNote = function ( i, note ) {
 
-            //
+            // Updates note text.
             $scope.notes[i].text = note;
 
             // Sets Edit back to false.
